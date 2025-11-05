@@ -27,6 +27,7 @@ Esta aplicación web permite crear y editar gráficos vectoriales directamente d
 - Base de datos con SQLite para persistencia de dibujos
 
 ## 📂 Estructura del proyecto
+```plaintext
 📁 paint-app/
 │
 ├── 📁 public/            # Archivos estáticos (HTML, CSS, JS)
@@ -39,7 +40,7 @@ Esta aplicación web permite crear y editar gráficos vectoriales directamente d
 ├── package.json
 ├── package-lock.json
 └── README.md
-
+```
 
 ## 🚀 Instalación y ejecución
 Asegúrate de tener **Node.js 18+** y **npm 9+** instalados.

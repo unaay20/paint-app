@@ -29,15 +29,17 @@ Esta aplicación web permite crear y editar gráficos vectoriales directamente d
 ## 📂 Estructura del proyecto
 📁 paint-app/
 │
-├── 📁 public/ # Archivos estáticos (HTML, CSS, JS)
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
+├── 📁 public/            # Archivos estáticos (HTML, CSS, JS)
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
-├── server.js # Servidor Express
+├── server.js             # Servidor Express
+│
 ├── package.json
 ├── package-lock.json
 └── README.md
+
 
 ## 🚀 Instalación y ejecución
 Asegúrate de tener **Node.js 18+** y **npm 9+** instalados.

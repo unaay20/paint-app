@@ -1,0 +1,23 @@
+{
+  "name": "paint2",
+  "version": "1.0.0",
+  "description": "Backend para aplicación de dibujo vectorial Paint.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "paint",
+    "drawing",
+    "canvas",
+    "vector"
+  ],
+  "author": "Tu nombre",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {}
+}

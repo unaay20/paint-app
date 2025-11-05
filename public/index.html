@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Paint.js - Vector Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>
+        <span>🎨 paint.js</span>
+        <div class="user-info">
+            <button class="logout-btn" id="new-btn">📄 Nuevo</button>
+        </div>
+    </h1>
+
+    <div id="container">
+        <header>
+            <button id="save-btn">💾 Guardar</button>
+            <button id="load-btn">📂 Cargar</button>
+            <button id="bg-btn">🖼️ Fondo</button>
+            <button id="export-btn">⬇️ Exportar PNG</button>
+        </header>
+
+        <aside>
+            <nav>
+                <button id="draw-btn" title="Pincel">✏️</button>
+                <button id="erase-btn" title="Borrador">🧹</button>
+                <button id="line-btn" title="Línea">📏</button>
+                <button id="rectangle-btn" title="Rectángulo">▭</button>
+                <button id="square-btn" title="Cuadrado">⬜</button>
+                <button id="circle-btn" title="Círculo">⭕</button>
+                <button id="ellipse-btn" title="Elipse">⬭</button>
+                <button id="polygon-btn" title="Polígono">⬡</button>
+                <button id="star-btn" title="Estrella">⭐</button>
+                <button id="picker-btn" title="Selector">🎨</button>
+                <button id="clear-btn" title="Limpiar">🗑️</button>
+            </nav>
+        </aside>
+
+        <main>
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </main>
+
+        <footer>
+            <label>Color: <input type="color" id="color-picker" value="#000000"></label>
+            <label>Grosor: <input type="number" id="line-width" min="1" max="10" value="2"></label>
+            <label id="polygon-label" style="display:none">Lados: <input type="number" id="polygon-sides" min="3"
+                    max="20" value="6"></label>
+            <label id="star-label" style="display:none">Puntas: <input type="number" id="star-points" min="3" max="20"
+                    value="5"></label>
+        </footer>
+    </div>
+
+    <input type="file" id="bg-input" accept="image/*" style="display:none">
+
+    <!-- MODAL CARGAR -->
+    <div class="modal" id="load-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mis Dibujos</h2>
+                <span class="close-modal" id="close-load-modal">&times;</span>
+            </div>
+            <div id="drawings-list"></div>
+        </div>
+    </div>
+
+    <!-- MODAL GUARDAR -->
+    <div class="modal" id="save-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Guardar Dibujo</h2>
+                <span class="close-modal" id="close-save-modal">&times;</span>
+            </div>
+            <div class="message" id="save-message"></div>
+            <form id="save-form">
+                <div class="form-group">
+                    <label for="drawing-name">Nombre del Dibujo</label>
+                    <input type="text" id="drawing-name" required>
+                </div>
+                <button type="submit" class="btn">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

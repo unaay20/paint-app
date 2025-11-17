@@ -18,7 +18,7 @@ Esta aplicación web permite crear y editar gráficos vectoriales directamente d
 ## 🏗️ Tecnologías utilizadas
 **Frontend:**
 - HTML5  
-- CSS3  
+- CSS3 con SASS  
 - JavaScript (Canvas API)
 
 **Backend:**
@@ -52,10 +52,14 @@ Asegúrate de tener **Node.js 18+** y **npm 9+** instalados.
 2. Instala las dependencias:
     ```bash
     npm install
-3. Inicia la aplicación:
+3. Crea un archivo .env con las siguientes variables:
+    ```bash
+    PORT=
+    JWT_SECRET=
+4. Inicia la aplicación:
     ```bash
     npm start
-4. Abre en tu navegador:
+5. Abre en tu navegador:
     ```bash
     http://localhost:3000
 ## 👨‍💻 Autor
